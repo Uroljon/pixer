@@ -1,0 +1,129 @@
+/* SERVICE HERO */
+.service-hero {
+    padding-top: 128px;
+    padding-bottom: 72px;
+    text-align: center;
+}
+
+.service-hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    margin-bottom: 16px;
+}
+
+.service-hero p {
+    width: 800px;
+    margin: auto;
+}
+
+/* SERIVE MAIN */
+main {
+    padding: 80px 0 16px;
+    background: #F4F4F4;
+}
+
+.service-card-wrapper {
+    width: 804px;
+    margin: auto;
+}
+
+.service-card {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    margin-bottom: 64px;
+    padding: 32px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-info {
+    width: 500px;
+}
+
+.card-img::before {
+    display: block;
+    width: 200px;
+    /* background-size: cover; */
+    overflow: hidden;
+    border: 1px solid rgba(172, 255, 47, 0.493);
+}
+
+.service-card:nth-of-type(1) .card-img::before {
+    content: url(../img/website-illustration.svg);
+}
+
+.service-card:nth-of-type(2) .card-img::before {
+    content: url(../img/bot-illustration.svg);
+}
+
+.service-card:nth-of-type(3) .card-img::before {
+    content: url(../img/smm-illustration.svg);
+}
+
+.service-card:nth-of-type(4) .card-img::before {
+    content: url(../img/design-illustration.svg);
+}
+
+.service-card:nth-of-type(5) .card-img::before {
+    content: url(../img/crm-illustration.svg);
+}
+
+.card-info p {
+    margin: 16px 0;
+}
+
+/* .card-info ul{
+    list-style: disc;
+    padding-left: 15px;
+} */
+.card-info ul li::before {
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(0, 186, 252, 1);
+    margin-right: 8px;
+}
+
+.service-card .btn {
+    margin: 16px 16px 0 0;
+}
+
+.service-card .more-info {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: rgba(0, 186, 252, 1);
+
+}
+
+/* select down arrow */
+#order form select {
+    background: #F3F3F3 !important;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::before {
+    content: url(../img/down-arrow.svg);
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 0px 5px 5px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #C4C4C4;
+
+    pointer-events: none;
+}
